@@ -183,5 +183,6 @@ def extract_dob(image_path, language='eng'):
         return match.group(1).replace("/", "-"), text
     return None, text
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="127.0.0.1", port=5000)
