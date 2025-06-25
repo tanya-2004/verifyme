@@ -1,0 +1,24 @@
+{
+  "name": "verifymeai",
+  "version": "1.0.0",
+  "description": "**VerifyMe** is a web-based age and identity verification tool built for demonstration purposes using **simulated Aadhar cards** and **live webcam selfies**. It performs OCR to extract DOB and uses face recognition to verify identity — all locally in the browser and backend, without relying on any government APIs.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanya-2004/verifyme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanya-2004/verifyme/issues"
+  },
+  "homepage": "https://github.com/tanya-2004/verifyme#readme",
+  "dependencies": {
+    "electron": "^37.0.0"
+  }
+}
