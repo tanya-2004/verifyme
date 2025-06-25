@@ -1,10 +1,18 @@
 services:
   - type: web
-    name: verifyme
+    name: verifyme-backend
     env: python
-    buildCommand: ""
+    rootDir: backend
+    buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn app:app"
     plan: free
     envVars:
       - key: FLASK_ENV
         value: production
+
+  - type: static
+    name: verifyme-frontend
+    rootDir: frontend
+    buildCommand: "npm run build"
+    staticPublishPath: dist
+    plan: free
