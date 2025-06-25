@@ -10,7 +10,7 @@ services:
       - key: FLASK_ENV
         value: production
 
-  - type: static
+  - type: static_site
     name: verifyme-frontend
     rootDir: frontend
     buildCommand: "npm run build"
